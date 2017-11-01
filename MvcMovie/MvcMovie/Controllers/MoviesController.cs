@@ -200,5 +200,11 @@ namespace MvcMovie.Controllers
         {
             return _context.Movie.Any(e => e.ID == id);
         }
+
+        // Outra forma de "dar a volta" a metodos com o mesmo nome é mudar a assinatura" //
+        // POST: Movies/Delete/6
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Delete(int id, boll notUsed)
     }
 }

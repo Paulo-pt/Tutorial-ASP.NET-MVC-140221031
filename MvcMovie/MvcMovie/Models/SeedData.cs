@@ -16,8 +16,8 @@ namespace MvcMovie.Models
                 if (context.Movie.Any())
                 {
                     return;   // DB has been seeded
-                }
 
+                }
                 context.Movie.AddRange(
                      new Movie
                      {
@@ -27,7 +27,6 @@ namespace MvcMovie.Models
                          Rating = "R",
                          Price = 7.99M
                      },
-
                      new Movie
                      {
                          Title = "Ghostbusters ",
@@ -45,7 +44,6 @@ namespace MvcMovie.Models
                          Rating = "R",
                          Price = 9.99M
                      },
-
                    new Movie
                    {
                        Title = "Rio Bravo",
@@ -55,6 +53,7 @@ namespace MvcMovie.Models
                        Price = 3.99M
                    }
                 );
+
                 context.SaveChanges();
             }
         }

@@ -25,6 +25,7 @@ namespace MvcMovie.Controllers
         //}
 
 
+
         //    [HttpPost]
         //public string Index(string searchString, bool notUsed)
         //{
@@ -58,7 +59,6 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(s => s.Title.Contains(searchString));
             }
-
             if (!String.IsNullOrEmpty(movieGenre))
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
@@ -70,11 +70,6 @@ namespace MvcMovie.Controllers
 
             return View(movieGenreVM);
         }
-
-
-
-
-
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)

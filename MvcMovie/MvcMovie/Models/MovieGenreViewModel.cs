@@ -8,5 +8,6 @@ namespace MvcMovie.Models
         public List<Movie> movies;
         public SelectList genres;
         public string movieGenre { get; set; }
+
     }
 }
